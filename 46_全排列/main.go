@@ -1,3 +1,5 @@
+// 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。
+
 // 解题思路
 // 如果数组只有一个数 a， 那全排列就是它本身 a，
 // 如果有两个数 a, b。 把它拆分开， 把a 追加到 b 的全排列 就是 [b, a]。 把b追加到a的全排列就是 [a, b]
@@ -14,7 +16,7 @@ package main
 import "fmt"
 
 func main() {
-	selected := []int{1,2,3}
+	selected := []int{1, 2, 3}
 	fmt.Println(append(append([]int{}, selected...), 1))
 }
 
